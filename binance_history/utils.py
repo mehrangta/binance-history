@@ -192,7 +192,6 @@ def load_klines(data_tz: str, content: bytes) -> DataFrame:
             df["close_datetime"] = pd.to_datetime(
                 df.close_ms, unit="ms", utc=True
             ).dt.tz_convert(data_tz)
-            del df["open_ms"]
             del df["close_ms"]
             df.set_index("open_datetime", inplace=True)
     return df
