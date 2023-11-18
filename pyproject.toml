@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "binance-history"
+name = "binance-history-backtest"
 version = "0.1.7"
 description = "Fetch binance historical klines or trades easily."
 authors = ["Meng Xiangzhuo <aumo@foxmail.com>"]
